@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<expansion_board id="sabem_board" name="SABEM FRDM board" compatibilityAdapter="true" xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/expansion_board_2.1 http://mcuxpresso.nxp.com/XSD/expansion_board_2.1.xsd" xmlns="http://mcuxpresso.nxp.com/XSD/expansion_board_2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header_connection ref="frdm_arduino">
+    <connectors>
+      <connector ref="C1" name="J3">
+        <pins>
+          <pin ref="2" name="NC"/>
+          <pin ref="4" name="3.3V" signal_type="power_supply_3.3V" description="Power supply +3.3V"/>
+          <pin ref="6" name="RESET" signal_type="reset_in" description="Reset input"/>
+          <pin ref="8" name="3.3V" signal_type="power_supply_3.3V" description="Power supply +3.3V"/>
+          <pin ref="10" name="5V" signal_type="power_supply_5V" description="Power supply +5V"/>
+          <pin ref="12" name="GND" signal_type="ground" description="Ground"/>
+          <pin ref="14" name="GND" signal_type="ground" description="Ground"/>
+          <pin ref="16" name="5V" signal_type="power_supply_5-9V" description="Input voltage 5V - 9V"/>
+        </pins>
+      </connector>
+      <connector ref="C2">
+        <pins>
+          <pin ref="2" name="D8"/>
+          <pin ref="4" name="D9"/>
+          <pin ref="6" name="D10"/>
+          <pin ref="8" name="D11"/>
+          <pin ref="10" name="D12"/>
+          <pin ref="12" name="D13"/>
+          <pin ref="14" name="GND" signal_type="ground" description="Ground"/>
+          <pin ref="16" name="AREF" signal_type="aref" description="Analogue Reference"/>
+          <pin ref="18" name="D18/SDA"/>
+          <pin ref="20" name="D19/SCL"/>
+        </pins>
+      </connector>
+    </connectors>
+  </header_connection>
+  <code_identifiers prefix="SABEM_"/>
+  <expansion_headers>
+    <expansion_header id="single_row_arduino" name="Arduino adapter">
+      <connectors>
+        <connector id="C1" name="J3">
+          <pins>
+            <pin id="1" pin_num="C1[2]" name="NC"/>
+            <pin id="2" pin_num="C1[4]" name="IOREF"/>
+            <pin id="3" pin_num="C1[6]" name="RESET"/>
+            <pin id="4" pin_num="C1[8]" name="3V3"/>
+            <pin id="5" pin_num="C1[10]" name="5V"/>
+            <pin id="6" pin_num="C1[12]" name="GND"/>
+            <pin id="7" pin_num="C1[14]" name="GND"/>
+            <pin id="8" pin_num="C1[16]" name="VIN"/>
+          </pins>
+        </connector>
+        <connector id="C2" name="A2">
+          <pins>
+            <pin id="1" pin_num="C2[2]" name="D8"/>
+            <pin id="2" pin_num="C2[4]" name="D9"/>
+            <pin id="3" pin_num="C2[6]" name="D10"/>
+            <pin id="4" pin_num="C2[8]" name="D11"/>
+            <pin id="5" pin_num="C2[10]" name="D12"/>
+            <pin id="6" pin_num="C2[12]" name="D13"/>
+            <pin id="7" pin_num="C2[14]" name="GND"/>
+            <pin id="8" pin_num="C2[16]" name="AREF"/>
+            <pin id="9" pin_num="C2[18]" name="SDA"/>
+            <pin id="10" pin_num="C2[20]" name="SCL"/>
+          </pins>
+        </connector>
+        <connector id="C3" name="A3">
+          <pins>
+            <pin id="1" pin_num="C3[2]" name="D0"/>
+            <pin id="2" pin_num="C3[4]" name="D1"/>
+            <pin id="3" pin_num="C3[6]" name="D2"/>
+            <pin id="4" pin_num="C3[8]" name="D3"/>
+            <pin id="5" pin_num="C3[10]" name="D4"/>
+            <pin id="6" pin_num="C3[12]" name="D5"/>
+            <pin id="7" pin_num="C3[14]" name="D6"/>
+            <pin id="8" pin_num="C3[16]" name="D7"/>
+          </pins>
+        </connector>
+        <connector id="C4" name="A4">
+          <pins>
+            <pin id="1" pin_num="C4[2]" name="A0"/>
+            <pin id="2" pin_num="C4[4]" name="A1"/>
+            <pin id="3" pin_num="C4[6]" name="A2"/>
+            <pin id="4" pin_num="C4[8]" name="A3"/>
+            <pin id="5" pin_num="C4[10]" name="A4"/>
+            <pin id="6" pin_num="C4[12]" name="A5"/>
+          </pins>
+        </connector>
+      </connectors>
+    </expansion_header>
+  </expansion_headers>
+</expansion_board>
