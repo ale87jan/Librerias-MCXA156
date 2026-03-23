@@ -1,5 +1,5 @@
 ---
-# Configuración de clang-tidy para el proyecto LPC4088-Documentacion.
+# Configuración de clang-tidy para el proyecto Librerias-MCXA156.
 # Naming rules alineadas con estiloC.md.
 #
 # USO desde línea de comandos (auto-fix):

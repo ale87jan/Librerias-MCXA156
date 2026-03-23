@@ -4,15 +4,17 @@
             "name": "ARMCLANG",
             "includePath": [
                 "${workspaceFolder}/**",
-                "%LOCALAPPDATA%/Arm/Packs/Keil/LPC4000_DFP/2.2.2/Device/Include",
-                "%LOCALAPPDATA%/Arm/Packs/ARM/CMSIS/6.3.0/cmsis/core/include",
+                "%LOCALAPPDATA%/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156",
+                "%LOCALAPPDATA%/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/drivers",
+                "%LOCALAPPDATA%/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include",
                 "%LOCALAPPDATA%/Keil_v5/ARM/ARMCLANG/include"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE",
-                "CORE_M4"
+                "CPU_MCXA156VLL",
+                "MCXA156_SERIES"
             ],
             "compilerPath": "%LOCALAPPDATA%/Keil_v5/ARM/ARMCLANG/bin/armclang.exe",
             "cStandard": "gnu11",
