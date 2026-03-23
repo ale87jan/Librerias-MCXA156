@@ -35,8 +35,8 @@
 
 ## Checklist
 
-- [ ] Mi código sigue las [convenciones del proyecto](.claude/estiloC.md)
-- [ ] He documentado con [Doxygen](.claude/docDoxygen.md) las APIs públicas
+- [ ] Mi código sigue las [convenciones del proyecto](../.claude/estiloC.md)
+- [ ] He documentado con [Doxygen](../.claude/docDoxygen.md) las APIs públicas
 - [ ] Sin números mágicos — uso constantes con nombre
 - [ ] He actualizado la documentación correspondiente
 
