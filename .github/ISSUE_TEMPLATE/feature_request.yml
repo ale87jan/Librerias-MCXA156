@@ -1,0 +1,74 @@
+name: "Solicitud de característica"
+description: "Proponer una nueva librería, función o mejora"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por sugerir una mejora para el proyecto.
+        Revisa los [issues abiertos](/issues)
+        para verificar que no se haya propuesto anteriormente.
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: "Descripción de la característica"
+      description: "Descripción clara y concisa de la característica deseada"
+      placeholder: "Sería útil tener una librería para el sensor de temperatura LM75B..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivacion
+    attributes:
+      label: "Motivación"
+      description: "¿Por qué sería útil esta característica?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: solucion
+    attributes:
+      label: "Solución propuesta"
+      description: "¿Cómo debería funcionar? Incluye nombres de funciones si los tienes pensados"
+      placeholder: |
+        Funciones propuestas:
+        - lm75b_inicializar()
+        - lm75b_leer_temperatura()
+
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: "Alternativas consideradas"
+      description: "Otras formas de lograr el mismo objetivo"
+
+  - type: textarea
+    id: contexto_educativo
+    attributes:
+      label: "Contexto educativo"
+      description: "¿Cómo beneficiaría esto a los estudiantes?"
+      placeholder: "Permitiría practicar comunicación I2C con un sensor real..."
+
+  - type: dropdown
+    id: periferico
+    attributes:
+      label: "Periférico relacionado"
+      description: "Selecciona el periférico principal involucrado"
+      options:
+        - GPIO
+        - UART
+        - SPI
+        - I2C
+        - ADC
+        - DAC
+        - PWM / CTimer
+        - RTC
+        - Timer
+        - GLCD / Pantalla
+        - Otro
+
+  - type: textarea
+    id: adicional
+    attributes:
+      label: "Información adicional"
+      description: "Cualquier otra información relevante (datasheets, esquemas, etc.)"
