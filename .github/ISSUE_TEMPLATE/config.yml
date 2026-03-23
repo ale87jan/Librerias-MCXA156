@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Preguntas generales"
+    url: "mailto:alejandro.lara@uca.es"
+    about: "Para dudas que no sean bugs ni solicitudes de caracteristicas, contacta al profesor"

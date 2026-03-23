@@ -1,0 +1,74 @@
+name: "Solicitud de caracteristica"
+description: "Proponer una nueva libreria, funcion o mejora"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por sugerir una mejora para el proyecto.
+        Revisa los [issues abiertos](https://github.com/ale87jan/Librerias-MCXA156/issues)
+        para verificar que no se haya propuesto anteriormente.
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: "Descripcion de la caracteristica"
+      description: "Descripcion clara y concisa de la caracteristica deseada"
+      placeholder: "Seria util tener una libreria para el sensor de temperatura LM75B..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivacion
+    attributes:
+      label: "Motivacion"
+      description: "Por que seria util esta caracteristica?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: solucion
+    attributes:
+      label: "Solucion propuesta"
+      description: "Como deberia funcionar? Incluye nombres de funciones si los tienes pensados"
+      placeholder: |
+        Funciones propuestas:
+        - lm75b_inicializar()
+        - lm75b_leer_temperatura()
+
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: "Alternativas consideradas"
+      description: "Otras formas de lograr el mismo objetivo"
+
+  - type: textarea
+    id: contexto_educativo
+    attributes:
+      label: "Contexto educativo"
+      description: "Como beneficiaria esto a los estudiantes?"
+      placeholder: "Permitiria practicar comunicacion I2C con un sensor real..."
+
+  - type: dropdown
+    id: periferico
+    attributes:
+      label: "Periferico relacionado"
+      description: "Selecciona el periferico principal involucrado"
+      options:
+        - GPIO
+        - UART
+        - SPI
+        - I2C
+        - ADC
+        - DAC
+        - PWM / CTimer
+        - RTC
+        - Timer
+        - GLCD / Pantalla
+        - Otro
+
+  - type: textarea
+    id: adicional
+    attributes:
+      label: "Informacion adicional"
+      description: "Cualquier otra informacion relevante (datasheets, esquemas, etc.)"

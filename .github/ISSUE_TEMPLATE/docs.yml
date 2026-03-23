@@ -1,0 +1,44 @@
+name: "Mejora de documentacion"
+description: "Reportar documentacion incorrecta, incompleta o confusa"
+labels: ["documentation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        La documentacion clara es fundamental en un proyecto educativo.
+        Tu feedback nos ayuda a mejorarla.
+
+  - type: dropdown
+    id: tipo_doc
+    attributes:
+      label: "Tipo de documentacion"
+      options:
+        - Comentarios Doxygen en codigo
+        - README o Markdown
+        - Ejemplo de uso
+        - Guia de instalacion
+        - Guia de hardware
+    validations:
+      required: true
+
+  - type: input
+    id: archivo
+    attributes:
+      label: "Archivo o libreria afectada"
+      placeholder: "ej. gpio_mcxa15x.h, docs/LIBRERIAS.md"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: "Que esta mal o falta?"
+      description: "Describe que es incorrecto, confuso o incompleto"
+    validations:
+      required: true
+
+  - type: textarea
+    id: sugerencia
+    attributes:
+      label: "Sugerencia de mejora"
+      description: "Como crees que deberia corregirse o mejorarse?"

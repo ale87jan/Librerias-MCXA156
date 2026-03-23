@@ -1,0 +1,103 @@
+name: "Reporte de error"
+description: "Reportar un error en una librería o ejemplo"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por tomarte el tiempo de reportar este error.
+        Antes de continuar, verifica que:
+        - No existe un [issue abierto](https://github.com/ale87jan/Librerias-MCXA156/issues) con el mismo problema
+        - Has revisado la documentación de la librería afectada
+        - El hardware está correctamente conectado
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: "Descripcion del error"
+      description: "Descripcion clara y concisa del error"
+      placeholder: "La funcion gpio_ajustar_dir() no configura correctamente el pin como salida..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproducir
+    attributes:
+      label: "Pasos para reproducir"
+      description: "Pasos para reproducir el comportamiento"
+      value: |
+        1. Compilar proyecto '...'
+        2. Ejecutar funcion '...'
+        3. Observar error '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: "Comportamiento esperado"
+      description: "Que deberia ocurrir"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Comportamiento actual"
+      description: "Que ocurre realmente"
+    validations:
+      required: true
+
+  - type: textarea
+    id: codigo
+    attributes:
+      label: "Codigo relevante"
+      description: "Pega aqui el codigo que produce el error"
+      render: c
+
+  - type: input
+    id: keil
+    attributes:
+      label: "Version de Keil uVision"
+      placeholder: "ej. 5.39"
+    validations:
+      required: true
+
+  - type: input
+    id: compilador
+    attributes:
+      label: "Version del compilador ARM"
+      placeholder: "ej. 6.19"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: hardware
+    attributes:
+      label: "Hardware"
+      options:
+        - FRDM-MCXA156
+        - FRDM-MCXA156 + LCD-PAR-S035
+        - Otro (indicar en informacion adicional)
+    validations:
+      required: true
+
+  - type: input
+    id: so
+    attributes:
+      label: "Sistema operativo"
+      placeholder: "ej. Windows 11"
+    validations:
+      required: true
+
+  - type: textarea
+    id: capturas
+    attributes:
+      label: "Capturas de pantalla"
+      description: "Si aplica, arrastra aqui capturas de pantalla"
+
+  - type: textarea
+    id: adicional
+    attributes:
+      label: "Informacion adicional"
+      description: "Cualquier otra informacion relevante"
