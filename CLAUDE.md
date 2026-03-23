@@ -34,6 +34,7 @@ This is a **teaching** repository — clarity beats optimization. When writing o
 - **Do not** merge similar functions — each concept gets its own function
 - **Do not** omit Doxygen blocks — explain _why_, not just _what_
 - Replace all magic numbers with named constants
+- **Always** use correct Spanish orthography (tildes/accents) in all user-visible text: documentation, templates, labels, descriptions, comments in Markdown. Pay special attention to frequent words: descripción, función, característica, librería, documentación, compilación, versión, información, código, periférico, módulo, corrección
 
 ## Detailed Guides
 
