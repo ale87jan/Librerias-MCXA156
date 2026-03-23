@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         Gracias por sugerir una mejora para el proyecto.
-        Revisa los [issues abiertos](https://github.com/ale87jan/Librerias-MCXA156/issues)
+        Revisa los [issues abiertos](/issues)
         para verificar que no se haya propuesto anteriormente.
 
   - type: textarea
