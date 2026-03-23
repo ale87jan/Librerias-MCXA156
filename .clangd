@@ -1,0 +1,58 @@
+CompileFlags:
+  Compiler: clang
+  Add:
+    - -DCORE_M4
+    - -D_RTE_
+    - -xc
+    - -std=gnu11
+    - --target=arm-none-eabi
+    - -mcpu=cortex-m4
+    - -mfpu=fpv4-sp-d16
+    - -mfloat-abi=hard
+    - -funsigned-char
+    - -fshort-enums
+    - -fshort-wchar
+    - -ffunction-sections
+    - -O0
+    - -gdwarf-4
+    - -Wall
+    - -Wextra
+    - -Wstrict-prototypes
+    - -Wno-packed
+    - -Wno-reserved-id-macro
+    - -Wno-unused-macros
+    - -Wno-documentation-unknown-command
+    - -Wno-documentation
+    - -Wno-parentheses-equality
+    - -Wno-reserved-identifier
+    - -IC:/Users/ale87/AppData/Local/Keil_v5/ARM/ARMCLANG/include
+    - -IC:/Users/ale87/AppData/Local/Arm/Packs/Keil/LPC4000_DFP/2.2.2/Device/Include
+    - -IC:/Users/ale87/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include
+  Remove:
+    - -fno-PIC
+
+InlayHints:
+  Enabled: true
+  ParameterNames: true
+
+Diagnostics:
+  Includes:
+    IgnoreHeader:
+      - tipos\.h
+      - MCXA156\.h
+      - core_cm4\.h
+  # Usa .clang-tidy como fuente de verdad para checks y naming
+  ClangTidy:
+    Add:
+      - readability-identifier-naming
+      - readability-braces-around-statements
+      - readability-else-after-return
+      - readability-isolate-declaration
+      - bugprone-macro-parentheses
+      - misc-*
+    Remove:
+      - misc-include-cleaner
+      - misc-no-recursion
+      - misc-unused-parameters
+      - modernize-*
+      - readability-magic-numbers

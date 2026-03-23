@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<expansion_board id="frdm_mcxa156_atari_board" name="FRDM MCXA156 Atari board"
+  xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/expansion_board_1.0 http://mcuxpresso.nxp.com/XSD/expansion_board_1.0.xsd"
+  xmlns="http://mcuxpresso.nxp.com/XSD/expansion_board_1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header_connection ref="frdm_arduino">
+    <connectors>
+      <connector ref="C1">
+        <pins>
+          <pin ref="8" name="3.3V" signal_type="power_supply_3.3V" description="Power supply +3.3V"/>
+          <pin ref="10" name="5V" signal_type="power_supply_5V" description="Power supply +5V"/>
+          <pin ref="12" name="GND" signal_type="ground" description="Ground"/>
+          <pin ref="14" name="GND" signal_type="ground" description="Ground"/>
+          <pin ref="16" name="VIN" signal_type="power_supply_5-9V" description="Power supply +5 .. +9V"/>
+        </pins>
+      </connector>
+      <connector ref="C2">
+        <pins>
+          <pin ref="2" name="8" signal_type="digital_in" description="LED Segments serial data"/>
+          <pin ref="4" name="9" signal_type="pwm_in" description="Servomotors"/>
+          <pin ref="6" name="10" signal_type="digital_in" description="LED - D4"/>
+          <pin ref="8" name="11" signal_type="digital_in" description="LED - D3"/>
+          <pin ref="10" name="12" signal_type="digital_in" description="LED - D2"/>
+          <pin ref="12" name="13" signal_type="digital_in" description="LED - D1"/>
+          <pin ref="14" name="GND" signal_type="ground" description="Ground"/>
+          <pin ref="16" name="AREF" signal_type="aref" description="Analog reference"/>
+        </pins>
+      </connector>
+      <connector ref="C3">
+        <pins>
+          <pin ref="2" name="0" signal_type="uart_tx" description="Digital sensors Rx"/>
+          <pin ref="4" name="1" signal_type="uart_rx" description="Digital sensors Tx"/>
+          <pin ref="6" name="2" signal_type="digital_out" description="IR sensor - UR4"/>
+          <pin ref="8" name="3" signal_type="pwm_in" description="buzzer/siren - LS1"/>
+          <pin ref="10" name="4" signal_type="digital_in" description="LED Segments write to latch"/>
+          <pin ref="12" name="5" signal_type="pwm_in" description="Servomotors"/>
+          <pin ref="14" name="6" signal_type="pwm_in" description="Servomotors"/>
+          <pin ref="16" name="7" signal_type="digital_in" description="LED Segments clock"/>
+        </pins>
+      </connector>
+      <connector ref="C4">
+        <pins>
+          <pin ref="2" name="A0" signal_type="analog_out" description="Trimmer - VR"/>
+          <pin ref="4" name="A1" signal_type="digital_out" description="Button - S1"/>
+          <pin ref="6" name="A2" signal_type="digital_out" description="Button - S2"/>
+          <pin ref="8" name="A3" signal_type="digital_out" description="Button - S3"/>
+          <pin ref="10" name="A4" signal_type="digital" description="Thermometer DS18B20 or LM35 - U5"/>
+          <pin ref="12" name="A5" signal_type="pwm_in" description="Servomotors"/>
+        </pins>
+      </connector>
+    </connectors>
+  </header_connection>
+  <code_identifiers prefix="ATARI_"/>
+</expansion_board>

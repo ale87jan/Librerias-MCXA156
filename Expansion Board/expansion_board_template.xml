@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding= "UTF-8" ?>
+<expansion_board id="board_id" name="board_name"
+  xsi:schemaLocation="http://mcuxpresso.nxp.com/XSD/expansion_board_1.0 http://mcuxpresso.nxp.com/XSD/expansion_board_1.0.xsd"
+  xmlns="http://mcuxpresso.nxp.com/XSD/expansion_board_1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header_connection ref="expansion_header_def_id">
+    <connectors>
+      <connector ref="C1">
+        <pins>
+          <pin ref="1" name="pin name" signal_type="digital_in" description="pin description"/>
+        </pins>
+      </connector>
+    </connectors>
+  </header_connection>
+  <code_identifiers prefix="ARDUINO_"/>
+</expansion_board>

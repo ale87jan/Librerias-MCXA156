@@ -1,0 +1,74 @@
+{
+  "workbench.startupEditor": "none",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "Visual Studio Dark - C++",
+  "claudeCode.preferredLocation": "sidebar",
+  "claudeCode.selectedModel": "opus",
+  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": "'ss02', 'ss03', 'ss04', 'ss05', 'ss07', 'cv30', 'cv30', 'onum'",
+  //                       <= >=     &       $       @      =~ !~    { }     |    123456789
+  "C_Cpp.doxygen.generatedStyle": "/**",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": false,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.formatOnType": true,
+  "editor.wordWrapColumn": 100,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.tabSize": 2,
+  "editor.rulers": [100],
+  "editor.autoIndentOnPaste": true,
+  "editor.minimap.maxColumn": 100,
+  "editor.insertSpaces": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.renderWhitespace": "boundary",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 100 }",
+  "C_Cpp.clang_format_style": ".clang-format",
+  "C_Cpp.default.intelliSenseMode": "clang-arm",
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "yaml.format.printWidth": 100,
+  "yaml.schemas": {
+    "https://squidfunk.github.io/mkdocs-material/schema.json": "mkdocs.yml",
+    "https://www.schemastore.org/clangd.json": ".clangd"
+  },
+  "yaml.customTags": [
+    "!ENV scalar",
+    "!ENV sequence",
+    "!relative scalar",
+    "tag:yaml.org,2002:python/name:material.extensions.emoji.to_svg",
+    "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
+    "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
+    "tag:yaml.org,2002:python/object/apply:pymdownx.slugs.slugify mapping"
+  ],
+  "[markdown]": {
+    "editor.unicodeHighlight.ambiguousCharacters": true,
+    "editor.unicodeHighlight.invisibleCharacters": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+  "files.associations": {
+    "lpc407x_8x_177x_8x.h": "c",
+    "system_lpc407x_8x_177x_8x.h": "c"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "clangd.fallbackFlags": [
+    "-DCORE_M4",
+    "-D_RTE_",
+    "-xc",
+    "-std=gnu11",
+    "--target=arm-none-eabi",
+    "-mcpu=cortex-m4",
+    "-mfpu=fpv4-sp-d16",
+    "-mfloat-abi=hard",
+    "-IC:/Users/ale87/AppData/Local/Keil_v5/ARM/ARMCLANG/include",
+    "-IC:/Users/ale87/AppData/Local/Arm/Packs/Keil/LPC4000_DFP/2.2.2/Device/Include",
+    "-IC:/Users/ale87/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include"
+  ]
+}

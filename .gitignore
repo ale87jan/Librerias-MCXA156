@@ -1,23 +1,8 @@
-# Prerequisites
-*.d
-
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
 # Precompiled Headers
 *.gch
 *.pch
 
 # Libraries
-*.lib
 *.a
 *.la
 *.lo
@@ -37,6 +22,7 @@
 *.hex
 
 # Debug files
+Debug/
 *.dSYM/
 *.su
 *.idb
@@ -50,3 +36,60 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Custom files
+*.lnk
+~$*
+
+# Keil µVision Project
+Listings/
+Objects/
+RTE/
+
+# Project screen layout file
+*.uvguix.*
+*.uvgui.*
+
+# Listing Files
+*.i
+*.lst
+*.m51
+*.m66
+*.map
+
+# Object Files
+*.axf
+*.b[0-2][0-9]
+*.b3[0-1]
+*.bak
+*.build_log.htm
+*.crf
+*.d
+*.dep
+*.elf
+*.htm
+*.iex
+*.lnp
+*.o
+*.obj
+*.sbr
+
+# Firmware Files
+*.bin
+*.h86
+*.hex
+
+# Build Files
+.bat
+
+# Debugger Files
+.ini
+
+# JLink Files
+JLinkLog.txt
+
+# Other Files
+EventRecorderStub.scvd
+
+# SDK Files
+SDK/

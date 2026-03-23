@@ -1,0 +1,13 @@
+MD033: 
+  allowed_elements:
+    - a
+    - img
+    - code
+    - p
+    - br
+    - strong
+    - em
+    - div
+MD013: false
+MD007:
+  indent: 2

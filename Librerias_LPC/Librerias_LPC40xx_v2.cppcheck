@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <builddir>cppcheck-build-dir</builddir>
+    <platform>arm32-wchar_t2.xml</platform>
+    <analyze-all-vs-configs>false</analyze-all-vs-configs>
+    <check-headers>true</check-headers>
+    <check-unused-templates>true</check-unused-templates>
+    <inline-suppression>true</inline-suppression>
+    <max-ctu-depth>2</max-ctu-depth>
+    <max-template-recursion>100</max-template-recursion>
+    <includedir>
+        <dir name="RTE/_Target_1/"/>
+        <dir name="RTE/Device/LPC4088FBD208/"/>
+        <dir name="C:/Users/ale87/AppData/Local/Arm/Packs/Keil/LPC4000_DFP/2.2.2/Device/Include/"/>
+        <dir name="C:/Users/ale87/AppData/Local/Arm/Packs/Keil/LPC4000_DFP/2.2.2/Device/Source/"/>
+        <dir name="C:/Users/ale87/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/"/>
+        <dir name="C:/Users/ale87/AppData/Local/Keil_v5/ARM/ARMCLANG/include/"/>
+    </includedir>
+    <paths>
+        <dir name="."/>
+    </paths>
+    <exclude>
+        <path name="Componentes/"/>
+        <path name="Listings/"/>
+        <path name="Objects/"/>
+        <path name="casdas-cppcheck-build-dir/"/>
+        <path name="RTE/"/>
+        <path name="C:/Users/ale87/AppData/Local/Arm/Packs/Keil/LPC4000_DFP/2.2.2/Device/Include/"/>
+        <path name="C:/Users/ale87/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include/"/>
+        <path name="C:/Users/ale87/AppData/Local/Keil_v5/ARM/ARMCLANG/include/"/>
+        <path name="C:/Users/ale87/AppData/Local/Arm/Packs/Keil/LPC4000_DFP/2.2.2/Device/Source/"/>
+        <path name="InfInd/"/>
+        <path name="Mains de todo/"/>
+        <path name="Otros/"/>
+        <path name="SABEM/"/>
+        <path name="Tetris/"/>
+        <path name="Avanzados/"/>
+    </exclude>
+    <suppressions>
+        <suppression>toomanyconfigs</suppression>
+        <suppression fileName="*177x_8x*">*</suppression>
+        <suppression fileName="*core*">*</suppression>
+        <suppression fileName="*cmsis*">*</suppression>
+        <suppression fileName="*math.h">*</suppression>
+        <suppression>unusedFunction</suppression>
+    </suppressions>
+    <check-level-exhaustive/>
+    <project-name>casdas</project-name>
+</project>
