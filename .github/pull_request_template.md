@@ -1,32 +1,32 @@
-## Descripcion
+## Descripción
 
-<!-- Descripcion de los cambios realizados -->
+<!-- Descripción de los cambios realizados -->
 
 ## Tipo de cambio
 
-- [ ] Correccion de bug (`fix`)
-- [ ] Nueva caracteristica o libreria (`feat`)
-- [ ] Documentacion (`docs`)
-- [ ] Refactorizacion (`refactor`)
+- [ ] Corrección de bug (`fix`)
+- [ ] Nueva característica o librería (`feat`)
+- [ ] Documentación (`docs`)
+- [ ] Refactorización (`refactor`)
 - [ ] Otros (indicar)
 
-## Periferico / modulo afectado
+## Periférico / módulo afectado
 
 <!-- ej. GPIO, UART, SPI, GLCD -->
 
-## Como se ha probado?
+## ¿Cómo se ha probado?
 
 <!-- Describe las pruebas realizadas en hardware -->
 
-### Compilacion
+### Compilación
 
-- [ ] Compila sin errores en Keil uVision (ARM Compiler 6)
+- [ ] Compila sin errores en Keil µVision (ARM Compiler 6)
 - [ ] Compila sin advertencias
 
 ### Hardware
 
 - [ ] Probado en FRDM-MCXA156
-- [ ] Casos limite verificados
+- [ ] Casos límite verificados
 
 ### Compatibilidad
 
@@ -35,10 +35,10 @@
 
 ## Checklist
 
-- [ ] Mi codigo sigue las [convenciones del proyecto](.claude/estiloC.md)
-- [ ] He documentado con [Doxygen](.claude/docDoxygen.md) las APIs publicas
-- [ ] Sin numeros magicos — uso constantes con nombre
-- [ ] He actualizado la documentacion correspondiente
+- [ ] Mi código sigue las [convenciones del proyecto](.claude/estiloC.md)
+- [ ] He documentado con [Doxygen](.claude/docDoxygen.md) las APIs públicas
+- [ ] Sin números mágicos — uso constantes con nombre
+- [ ] He actualizado la documentación correspondiente
 
 ## Issues relacionados
 
