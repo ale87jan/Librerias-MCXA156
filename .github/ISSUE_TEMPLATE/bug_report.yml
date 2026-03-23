@@ -7,7 +7,7 @@ body:
       value: |
         Gracias por tomarte el tiempo de reportar este error.
         Antes de continuar, verifica que:
-        - No existe un [issue abierto](https://github.com/ale87jan/Librerias-MCXA156/issues) con el mismo problema
+        - No existe un [issue abierto](/issues) con el mismo problema
         - Has revisado la documentación de la librería afectada
         - El hardware está correctamente conectado
 
