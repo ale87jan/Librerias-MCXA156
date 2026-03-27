@@ -90,3 +90,6 @@ JLinkLog.txt
 
 # Other Files
 EventRecorderStub.scvd
+
+# CLAUDE CODE files
+.claude/settings.local.json
