@@ -1,0 +1,25 @@
+{
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
+  "permissions": {
+    "allow": ["Bash(dir:*)", "Bash(gh:*)"],
+    "deny": [
+      "Edit(Librerias_LPC/**)",
+      "Edit(Referencias/**)",
+      "Edit(CMSIS_Driver_templates/**)",
+      "Edit(docs_plantilla/**)"
+    ]
+  },
+  "plansDirectory": ".claude/plans",
+  "model": "sonnet",
+  "env": {
+    "MAX_THINKING_TOKENS": "10000",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "50"
+  },
+  "enabledPlugins": {
+    "claude-code-setup@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true
+  }
+}

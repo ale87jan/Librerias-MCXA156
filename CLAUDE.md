@@ -38,10 +38,10 @@ This is a **teaching** repository — clarity beats optimization. When writing o
 
 ## Detailed Guides
 
-- **Git Workflow**: Commit types, branch naming, PR checklist → [.claude/git.md](.claude/git.md)
-- **C Style**: Naming, K&R formatting, declarations, spacing → [.claude/estiloC.md](.claude/estiloC.md)
-- **Doxygen Documentation**: Templates for files, functions, macros, enums → [.claude/docDoxygen.md](.claude/docDoxygen.md)
-- **Assembler Style**: Columnar format, registers, ARM comments → [.claude/estiloEnsamblador.md](.claude/estiloEnsamblador.md)
+- **Git Workflow**: Commit types, branch naming, PR checklist → [.claude/rules/git.md](.claude/rules/git.md)
+- **C Style**: Naming, K&R formatting, declarations, spacing → [.claude/rules/estiloC.md](.claude/rules/estiloC.md)
+- **Doxygen Documentation**: Templates for files, functions, macros, enums → [.claude/rules/docDoxygen.md](.claude/rules/docDoxygen.md)
+- **Assembler Style**: Columnar format, registers, ARM comments → [.claude/rules/estiloEnsamblador.md](.claude/rules/estiloEnsamblador.md)
 - **Testing and Validation**: Hardware verification, no unit tests → [.claude/testing.md](.claude/testing.md)
 - **Contribution Guidelines** (human-facing, full detail) → [CONTRIBUTING.md](CONTRIBUTING.md)
 
