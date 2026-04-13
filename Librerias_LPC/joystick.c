@@ -41,8 +41,6 @@
  */
 uint8_t joystick_leer(void) {
 
-  leds_inicializar();
-
   if (!gpio_leer_pin(PUERTO2, PIN23)) {
     leds_encender(LED1);
     return JOYSTICK_IZQUIERDA;
