@@ -371,7 +371,6 @@ static float32_t uart_calcular_baudrate(LPC_UART_TypeDef *uart_regs, uint32_t ba
     }  // Bucle divisor_entero
   }
 
-
   // Activar el acceso a los registros del divisor del reloj (DLM y DLL)
   uart_regs->LCR |= UART_LCR_ACCESO_DIVISOR_LATCH;
 
