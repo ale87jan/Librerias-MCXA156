@@ -1,0 +1,34 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/tmp/CMakeFiles/gpio_input_interrupt.release+mdk-configure"
+		},
+		{
+			"file" : "D:/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/tmp/CMakeFiles/gpio_input_interrupt.release+mdk-configure.rule"
+		},
+		{
+			"file" : "D:/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/tmp/gpio_input_interrupt.release+mdk/src/gpio_input_interrupt.release+mdk-stamp/gpio_input_interrupt.release+mdk-configure.rule"
+		},
+		{
+			"file" : "D:/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/tmp/gpio_input_interrupt.release+mdk/src/gpio_input_interrupt.release+mdk-stamp/gpio_input_interrupt.release+mdk-patch.rule"
+		},
+		{
+			"file" : "D:/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/tmp/gpio_input_interrupt.release+mdk/src/gpio_input_interrupt.release+mdk-stamp/gpio_input_interrupt.release+mdk-update.rule"
+		},
+		{
+			"file" : "D:/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/tmp/gpio_input_interrupt.release+mdk/src/gpio_input_interrupt.release+mdk-stamp/gpio_input_interrupt.release+mdk-download.rule"
+		},
+		{
+			"file" : "D:/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/tmp/gpio_input_interrupt.release+mdk/src/gpio_input_interrupt.release+mdk-stamp/gpio_input_interrupt.release+mdk-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"gpio_input_interrupt.release+mdk"
+		],
+		"name" : "gpio_input_interrupt.release+mdk-configure"
+	}
+}

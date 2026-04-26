@@ -1,0 +1,19 @@
+build-idx:
+  generated-by: csolution version 2.13.0+p3-g40b6564e
+  csolution: flexio_mculcd_polling.csolution.yml
+  cbuild-run: out/flexio_mculcd_polling+Debug.cbuild-run.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: flexio_mculcd_polling.cproject.yml
+  cbuilds:
+    - cbuild: out/flexio_mculcd_polling/Debug/flexio_mculcd_polling+Debug.cbuild.yml
+      project: flexio_mculcd_polling
+      configuration: +Debug
+      messages:
+        info:
+          - flexio_mculcd_polling.cbuild-pack.yml - file is already up-to-date
+          - flexio_mculcd_polling+Debug.cbuild-run.yml - file is already up-to-date
+          - flexio_mculcd_polling+Debug.cbuild.yml - file is already up-to-date
+      packs-unused:
+        - pack: ARM::CMSIS-DSP@1.17.0
+        - pack: ARM::CMSIS-NN@4.1.0

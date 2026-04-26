@@ -1,0 +1,36 @@
+default:
+
+  misc:
+    - for-compiler: AC6
+      C-CPP:
+        - -mfpu=fpv5-sp-d16
+        - -mcpu=cortex-m33
+        - -std=gnu11
+        - -fshort-enums
+        - -fshort-wchar
+        - -ffunction-sections
+        - -fno-common
+        - -fdata-sections
+        - -fno-builtin
+        - -mthumb
+        - -fno-rtti
+      CPP:
+        - -fno-exceptions
+      Link:
+        - --cpu=Cortex-M33
+        - --library_type=microlib
+        - --strict
+        - --remove
+        - --diag_suppress 6314
+        - --summary_stderr
+        - --map
+        - --load_addr_map_info
+        - --xref
+        - --callgraph
+        - --symbols
+        - --info summarysizes
+        - --info sizes
+        - --info totals
+        - --info unused
+        - --info veneers
+        - --entry=Reset_Handler

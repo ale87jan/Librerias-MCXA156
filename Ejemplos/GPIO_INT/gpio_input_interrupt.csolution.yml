@@ -1,0 +1,61 @@
+solution:
+  created-for: CMSIS-Toolbox@2.12.0
+  description: Proyectos de ejemplo para la placa FRDM-MCXA156 con LCD-PAR-S035.
+  select-compiler:
+    # Lists the possible compiler selection that this project is tested with.
+    - compiler: AC6 # ARM Compiler 6 (armclang)
+
+  cdefault: # When specified, the cdefault.yml file is used to setup the compiler.
+
+  compiler: AC6 # Overall toolchain selection for this solution.
+  language-C: gnu11 # Set the language standard for C source file compilation.
+  language-CPP: gnu++11 # Set the language standard for C++ source file compilation.
+
+  output-dirs:
+    # Control the output directories for the build output.
+    # outdir: ./$TargetType$/$BuildType$
+    outdir: ./Objects/$BuildType$
+
+  packs:
+    # Defines local packs and/or scope of packs that are used.
+    - pack: NXP::MCXA156_DFP
+    - pack: NXP::FRDM-MCXA156_BSP
+    - pack: ARM::CMSIS
+
+  target-types:
+    # List of target-types that define the target system (device or board).
+    - type: mdk
+      board: NXP::FRDM-MCXA156
+      device: MCXA156VLL
+      compiler: AC6
+      target-set:
+        - set:
+          images:
+            - project-context: gpio_input_interrupt.release
+          debugger:
+            name: CMSIS-DAP@pyOCD
+            clock: 10000000
+            protocol: swd
+
+  projects:
+    # List of projects that belong to the solution.
+    - project: gpio_input_interrupt.cproject.yml
+
+  build-types:
+    # List of build-types (i.e. Release, Debug, Test).
+    - type: debug
+      optimize: debug
+      debug: on
+    - type: release
+      optimize: speed
+      debug: off
+
+  define:
+    # Define symbol settings for C/C++ code generation.
+    - CPU_MCXA156VLL
+
+  define-asm:
+    - __MICROLIB: 1
+    - __CC_ARM: 1
+    - _RTE_: 1
+    - CPU_MCXA156VLL: 1

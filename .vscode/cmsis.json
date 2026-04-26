@@ -1,0 +1,7 @@
+{
+    "targetSet": {
+        "Ejemplos/GPIO_INT/gpio_input_interrupt": {
+            "activeTargetType": "mdk"
+        }
+    }
+}

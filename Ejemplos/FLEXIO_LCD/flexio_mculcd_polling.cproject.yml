@@ -1,0 +1,119 @@
+project:
+  packs:
+    - pack: ARM::CMSIS@^6.3.0
+    - pack: NXP::FRDM-MCXA156_BSP@^25.12.00
+    - pack: NXP::MCXA156_DFP@^25.12.00
+    - pack: ARM::CMSIS-NN@^4.0.0
+    - pack: ARM::CMSIS-DSP@^1.10.1
+  setups:
+    - setup: Options for Debug
+      processor:
+        fpu: sp
+      debug: "on"
+      define:
+        - DEBUG
+        - BOARD_LCD_S035: 1
+        - SDK_DEBUGCONSOLE: 1
+        - MCUX_META_BUILD
+        - MCUXPRESSO_SDK
+        - CPU_MCXA156VLL
+        - MCXA156_SERIES
+      define-asm:
+        - CPU_LPC55S69JBD100_cm33_core0
+        - DEBUG
+        - __CC_ARM
+        - KEIL
+        - MCUXPRESSO_SDK
+        - CPU_MCXA156VLL
+        - MCXA156_SERIES
+        - __MICROLIB: 1
+      misc:
+        - C:
+            - -std=gnu11
+          C-CPP:
+            - -fno-rtti
+            - -Werror
+            - -funsigned-char
+            - -fshort-enums
+            - -fshort-wchar
+            - -ffunction-sections
+            - -Wno-packed
+            - -Wno-missing-variable-declarations
+            - -Wno-missing-prototypes
+            - -Wno-missing-noreturn
+            - -Wno-sign-conversion
+            - -Wno-nonportable-include-path
+            - -Wno-reserved-id-macro
+            - -Wno-unused-macros
+            - -Wno-documentation-unknown-command
+            - -Wno-documentation
+            - -Wno-license-management
+            - -Wno-parentheses-equality
+            - -include mcux_config.h -include mcuxsdk_version.h -fno-common  -fdata-sections  -fno-builtin  -mthumb
+          CPP:
+            - -xc++
+            - -std=gnu++11
+            - -fno-exceptions
+          ASM:
+            - -masm=auto
+            - -include mcux_config.h
+          Link:
+            - --library_type=microlib
+            - --map
+            - --load_addr_map_info
+            - --xref
+            - --callgraph
+            - --symbols
+            - --remove --entry=Reset_Handler --info=sizes,totals,unused,veneers
+            - --strict
+            - --diag_suppress=6314
+            - --summary_stderr
+            - --info summarysizes
+  groups:
+    - group: source
+      files:
+        - file: flexio_mculcd_polling.c
+        - file: pin_mux.c
+        - file: pin_mux.h
+        - file: mcux_config.h
+        - file: mcuxsdk_version.h
+    - group: board
+      files:
+        - file: board.c
+        - file: board.h
+        - file: clock_config.c
+        - file: clock_config.h
+        - file: hardware_init.c
+        - file: app.h
+    - group: doc
+      files:
+        - file: readme.md
+        - file: example_board_readme.md
+        - file: examples_shared_readme.md
+  components:
+    - component: ARM::CMSIS:CORE
+    - component: NXP::Device:CMSIS:MCXA156_header
+    - component: NXP::Device:CMSIS:MCXA156_system
+    - component: NXP::Device:SDK Drivers:clock
+    - component: NXP::Device:SDK Drivers:common
+    - component: NXP::Device:SDK Drivers:dbi
+    - component: NXP::Device:SDK Drivers:flexio
+    - component: NXP::Device:SDK Drivers:flexio_mculcd
+    - component: NXP::Device:SDK Drivers:gpio
+    - component: NXP::Device:SDK Drivers:inputmux_connections
+    - component: NXP::Device:SDK Drivers:lpuart
+    - component: NXP::Device:SDK Drivers:lpuart_adapter
+    - component: NXP::Device:SDK Drivers:mcx_spc
+    - component: NXP::Device:SDK Drivers:port
+    - component: NXP::Device:SDK Drivers:reset
+    - component: NXP::Device:SDK Drivers:st7796s
+    - component: NXP::Device:SDK Drivers:video-common
+    - component: NXP::Device:SDK Utilities:MCXA156_linker
+    - component: NXP::Device:SDK Utilities:assert_lite
+    - component: NXP::Device:SDK Utilities:cmake_toolchain
+    - component: NXP::Device:SDK Utilities:debug_console_lite
+    - component: NXP::Device:SDK Utilities:str
+    - component: NXP::Device:Startup
+      misc:
+        - ASM:
+            - -masm=gnu

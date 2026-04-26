@@ -1,0 +1,18 @@
+build-idx:
+  generated-by: csolution version 2.13.0+p3-g40b6564e
+  description: Proyectos de ejemplo para la placa FRDM-MCXA156 con LCD-PAR-S035.
+  cdefault: cdefault.yml
+  csolution: gpio_input_interrupt.csolution.yml
+  cbuild-run: Objects/gpio_input_interrupt+mdk.cbuild-run.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: gpio_input_interrupt.cproject.yml
+  cbuilds:
+    - cbuild: Objects/release/gpio_input_interrupt.release+mdk.cbuild.yml
+      project: gpio_input_interrupt
+      configuration: .release+mdk
+      messages:
+        info:
+          - gpio_input_interrupt.cbuild-pack.yml - file is already up-to-date
+          - gpio_input_interrupt+mdk.cbuild-run.yml - file is already up-to-date
+          - gpio_input_interrupt.release+mdk.cbuild.yml - file is already up-to-date

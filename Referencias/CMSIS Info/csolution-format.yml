@@ -1,0 +1,23 @@
+# The solution: node is the start of a *.csolution.yml file that collects related projects
+# All options are optional except for the target-types and projects nodes, which are required
+
+solution:
+  # OPTIONAL NODES
+  created-by:       # Identifies the tool that created this solution.
+  created-for:      # Specifies the tool for building this solution, i.e. CMSIS-Toolbox@2.5.0
+  description:      # Brief description text of this solution.
+  select-compiler:  # Lists the possible compiler selection that this project is tested with.
+  cdefault:         # When specified, the cdefault.yml file is used to setup the compiler.
+  compiler:         # Overall toolchain selection for this solution.
+  language-C:       # Set the language standard for C source file compilation.
+  language-CPP:     # Set the language standard for C++ source file compilation.
+  output-dirs:      # Control the output directories for the build output.
+  generators:       # Control the directory structure for generator output.
+  packs:            # Defines local packs and/or scope of packs that are used.
+  build-types:      # List of build-types (i.e. Release, Debug, Test).
+  executes:         # Additional pre or post build steps using external tools.
+  misc:             # Literal tool-specific controls.
+
+  # REQUIRED NODES
+  target-types:     # List of target-types that define the target system (device or board).
+  projects:         # List of projects that belong to the solution.

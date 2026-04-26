@@ -1,0 +1,26 @@
+# ninja log v7
+11	316	7965981080179321	CMakeFiles/Group_board.dir/D_/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/pin_mux.o	3dc34c3eb8f29684
+16	348	7965981080237663	CMakeFiles/Group_board.dir/D_/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/board.o	2189c08a2e6113b5
+5	362	7965981080122366	CMakeFiles/Group_source.dir/D_/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/gpio_input_interrupt.o	8a9011b3ef03165
+28	374	7965981080347155	CMakeFiles/NXP_Device_CMSIS_MCXA156_system_1_0_0.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/system_MCXA156.o	7806e85b527c036d
+22	383	7965981080293020	CMakeFiles/Group_board.dir/D_/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/clock_config.o	1825e7aec3b89e95
+49	392	7965981080559871	CMakeFiles/NXP_Device_SDK_Drivers_common_2_6_2.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/drivers/fsl_common_arm.o	7686ba43044e00a3
+56	412	7965981080630323	CMakeFiles/NXP_Device_SDK_Drivers_gpio_2_8_3.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/drivers/fsl_gpio.o	44e7ffaf931d3a2b
+41	420	7965981080478804	CMakeFiles/NXP_Device_SDK_Drivers_common_2_6_2.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/drivers/fsl_common.o	dc230f962be54d4d
+72	423	7965981080793918	CMakeFiles/NXP_Device_SDK_Drivers_lists_1_0_0.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/components/lists/fsl_component_generic_list.o	c8c2b37172a3e777
+64	438	7965981080713284	CMakeFiles/NXP_Device_SDK_Drivers_inputmux_2_0_10.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/drivers/fsl_inputmux.o	cdebee1174cf5102
+88	442	7965981080952433	CMakeFiles/NXP_Device_SDK_Drivers_lpuart_adapter_1_0_0.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/components/uart/fsl_adapter_lpuart.o	4ac7ab8b76d83fb1
+97	517	7965981081118432	CMakeFiles/NXP_Device_SDK_Drivers_mcx_spc_2_10_0.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/drivers/fsl_spc.o	4a661861380c3c64
+34	523	7965981080412147	CMakeFiles/NXP_Device_SDK_Drivers_clock_2_0_0.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/drivers/fsl_clock.o	3ad0cf4cf0d07ab9
+330	569	7965981083466952	CMakeFiles/NXP_Device_SDK_Drivers_reset_2_4_0.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/drivers/fsl_reset.o	a94caddc0522ff91
+351	587	7965981083607093	CMakeFiles/NXP_Device_SDK_Utilities_assert_lite_1_0_0.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/utilities/debug_console_lite/fsl_assert.o	5c817af90fac5801
+374	597	7965981083813632	CMakeFiles/NXP_Device_SDK_Utilities_misc_utilities_1_1_1.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/utilities/fsl_memcpy.o	d4f95e7f34e2acd8
+392	622	7965981083995818	CMakeFiles/NXP_Device_Startup_1_0_0.dir/D_/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/mdk/RTE/Device/MCXA156VLL/startup_MCXA156.o	48f57ee3d43c4e52
+365	666	7965981083717916	CMakeFiles/NXP_Device_SDK_Utilities_debug_console_lite_1_0_0.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/utilities/debug_console_lite/fsl_debug_console.o	369e6be9ed9a71e3
+383	702	7965981083903991	CMakeFiles/NXP_Device_SDK_Utilities_str_1_0_0.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/utilities/str/fsl_str.o	694108d7c557d94f
+80	713	7965981080874361	CMakeFiles/NXP_Device_SDK_Drivers_lpuart_2_10_0.dir/C_/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/drivers/fsl_lpuart.o	fb86eafec5adbb64
+713	1176	7965981087206079	D:/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/Objects/release/gpio_input_interrupt.axf	960d6edb574c5b4f
+17	89	7965981093586570	CMakeFiles/database	f799433786b7b96
+17	89	7965981093586570	D:/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/tmp/1/CMakeFiles/database	f799433786b7b96
+91	313	7972703110890826	CMakeFiles/database	f799433786b7b96
+91	313	7972703110890826	D:/Github/Librerias-MCXA156/Ejemplos/GPIO_INT/tmp/1/CMakeFiles/database	f799433786b7b96

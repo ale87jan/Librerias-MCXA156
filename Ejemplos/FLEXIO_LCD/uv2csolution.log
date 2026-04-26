@@ -1,0 +1,19 @@
+1 out of 1 target(s) converted
+
+Created solution: D:/Github/Librerias-MCXA156/Ejemplos/FLEXIO_LCD/flexio_mculcd_polling.csolution.yml
+
+With projects:
+
+- D:/Github/Librerias-MCXA156/Ejemplos/FLEXIO_LCD/flexio_mculcd_polling.cproject.yml
+
+Error: 0 error(s), 1 warning(s):
+
+Warnings:
+
+	The target "Debug" is configured with following user commands which should be run manually:
+
+            After Build/Rebuild
+
+                fromelf.exe --output "$Lflexio_mculcd_polling.bin" --bincombined "#L"
+
+
