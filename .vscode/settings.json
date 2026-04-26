@@ -71,5 +71,7 @@
     "-IC:/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156",
     "-IC:/Users/ale87/AppData/Local/Arm/Packs/NXP/MCXA156_DFP/25.12.00/devices/MCXA156/drivers",
     "-IC:/Users/ale87/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include"
-  ]
+  ],
+  "debug.hideSlowPreLaunchWarning": true,
+  "debug.showInStatusBar": "never"
 }
