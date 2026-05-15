@@ -93,3 +93,5 @@ EventRecorderStub.scvd
 
 # CLAUDE CODE files
 .claude/settings.local.json
+.claude/plans/
+.vscode/settings.local.json
