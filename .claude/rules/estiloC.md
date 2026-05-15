@@ -1,6 +1,6 @@
 ---
 paths:
-  - "Librerias/*.{c,h}"
+  - "Librerias/**/*.{c,h}"
 ---
 
 # Estilo de C
@@ -55,6 +55,8 @@ typedef struct {
 ```
 
 ### Formatting (K&R with specific rules)
+
+Las reglas de formato están codificadas en `.editorconfig` (raíz del repositorio). El editor debe respetarlas automáticamente; no sobreescribas esa configuración.
 
 ```c
 // 100 character line width

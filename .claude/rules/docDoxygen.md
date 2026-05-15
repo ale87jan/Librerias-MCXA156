@@ -1,6 +1,6 @@
 ---
 paths:
-  - "Librerias/*.{c,h}"
+  - "Librerias/**/*.{c,h}"
 ---
 
 # Documentación Doxygen
