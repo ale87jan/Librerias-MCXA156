@@ -1,10 +1,19 @@
 {
+  "env": {
+    "MAX_THINKING_TOKENS": "10000",
+    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "60"
+  },
   "attribution": {
     "commit": "",
     "pr": ""
   },
   "permissions": {
-    "allow": ["Bash(dir:*)", "Bash(gh:*)"],
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(gh:*)",
+      "Bash(find:*)",
+      "WebSearch"
+    ],
     "deny": [
       "Edit(Librerias_LPC/**)",
       "Edit(Referencias/**)",
@@ -12,14 +21,11 @@
       "Edit(docs_plantilla/**)"
     ]
   },
-  "plansDirectory": ".claude/plans",
-  "model": "sonnet",
-  "env": {
-    "MAX_THINKING_TOKENS": "10000",
-    "CLAUDE_AUTOCOMPACT_PCT_OVERRIDE": "50"
-  },
+  "model": "haiku",
   "enabledPlugins": {
     "claude-code-setup@claude-plugins-official": true,
     "commit-commands@claude-plugins-official": true
   }
+  "outputStyle": "respuesta-corta",
+  "plansDirectory": ".claude/plans"
 }

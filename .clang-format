@@ -30,7 +30,7 @@ EmptyLineBeforeAccessModifier: LogicalBlock
 # ===== LLAVES (K&R Style) =====
 # Llave de apertura en la misma línea
 BreakBeforeBraces: Attach
-# Insertar llaves donde el estándar no las requiere (clang-format ≥ 15)
+# Insertar llaves donde el estándar no las requiere (clang-format >= 15)
 # Garantiza que todo if/for/while/do tenga bloque explícito
 InsertBraces: true
 
@@ -62,9 +62,18 @@ SpaceBeforeParensOptions:
 # ===== ALINEACIÓN =====
 # Alinear parámetros en llamadas multilínea
 AlignAfterOpenBracket: Align
-AlignConsecutiveAssignments: None
-AlignConsecutiveDeclarations: None
-AlignConsecutiveMacros: None
+AlignConsecutiveAssignments:
+  Enabled: true
+  AlignCompound: true
+  PadOperators: true
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AlignFunctionDeclarations: false
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: false
+
 AlignEscapedNewlines: Right
 AlignOperands: Align
 AlignTrailingComments: Always
@@ -108,17 +117,18 @@ PenaltyReturnTypeOnItsOwnLine: 60
 # ===== INCLUDES (recomendado para embebido C) =====
 # Si tu clang-format no soporta valores extendidos, usa: SortIncludes: true
 SortIncludes: CaseInsensitive
-IncludeBlocks: Regroup
+IncludeBlocks: Merge
 
 # Detecta mejor cabecera principal asociada al .c
 IncludeIsMainRegex: '(_lpc40xx)?$'
 IncludeIsMainSourceRegex: '(main_.*|.*)\.c$'
 
 # Orden por grupos:
-# 1) Cabecera principal asociada al .c (detectada automáticamente)
+# 1) Cabecera principal asociada al .c (detectada automáticamente) (comillas)
 # 2) CMSIS / startup / system (ángulos)
 # 3) Cabeceras estándar del compilador (ángulos)
-# 4) Cabeceras del proyecto (comillas)
+# 4) Cabeceras generales tipos / glcd / error (comillas)
+# 5) Cabeceras del proyecto (comillas)
 IncludeCategories:
   - Regex: '^<(LPC407x_8x_177x_8x|core_cm4|system_.*)\.h>$'
     Priority: 1
@@ -126,12 +136,15 @@ IncludeCategories:
   - Regex: '^<[^>]+>$'
     Priority: 2
     SortPriority: 2
-  - Regex: '^"[^"]+"$'
+  - Regex: '^"(tipos|error|glcd)\.h"$'
     Priority: 3
     SortPriority: 3
+  - Regex: '^"[^"]+"$'
+    Priority: 4
+    SortPriority: 4
 
 # ===== MACROS Y PREPROCESADOR =====
-# No indentar directivas de preprocesador
+# Indentar directivas del preprocesador como código normal (no al margen)
 IndentPPDirectives: BeforeHash
 
 # ===== SWITCHES =====
